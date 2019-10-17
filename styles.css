@@ -26,18 +26,23 @@ img {
 nav {
     background-color: #000;
     padding: 0.5em;
+    list-style-position: inherit;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style:none; 
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 0.5em 1em;
+    display: grid;
+    grid-template-columns:repeat(1);
+    grid-template-rows:repeat(6);
+    grid-gap: 15px;
 }
 
 .photos {
