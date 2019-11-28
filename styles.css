@@ -6,10 +6,10 @@ body {
 }
 
 img {
+    float:	left;		
+    padding:	20px	20px	0px	0px; 
     max-width: 100%;
     display: block;
-    float: left;
-    padding: 0px 20px 0px 0px;
 }
 
 .logo {
@@ -20,39 +20,40 @@ img {
 }
 
 .grid {
+    display: grid;		
+    grid-template-columns: 3fr 1fr;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
-    display: flex;
 }
 
 nav {
+    position: sticky;
+    top: 0;
     background-color: #000;
     padding: 0.5em;
-    list-style-position: inherit;
-    top: 0%;
 }
 
 nav ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
     margin: 0;
     padding: 0;
-    list-style:none; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    list-style: none;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 0.5em 1em;
-    display: grid;
-    grid-template-columns:repeat(1);
-    grid-template-rows:repeat(6);
-    grid-gap: 15px;
 }
 
 .photos {
+    display: grid;		
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;		
     list-style: none;
     margin: 0;
     padding: 0;
